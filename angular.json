@@ -5,7 +5,6 @@
   "projects": {
     "fitberry-front": {
       "projectType": "application",
-      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -33,14 +32,14 @@
             "production": {
               "budgets": [
                 {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "type": "bundle",
+                  "maximumWarningInPercentage": 5,
+                  "maximumErrorInPercentage": 5
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarningInPercentage": 2,
+                  "maximumErrorInPercentage": 4
                 }
               ],
               "outputHashing": "all"
@@ -58,6 +57,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "fitberry-front:build",
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "fitberry-front:build:production"
@@ -71,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fitberry-front:build"
+            "buildTarget": "fitberry-front:build"
           }
         },
         "test": {
@@ -96,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "c5c1c61a-56a5-4264-a478-08d983862532"
+    "analytics": false
   }
 }
