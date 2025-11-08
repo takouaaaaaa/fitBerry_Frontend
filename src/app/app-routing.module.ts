@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'articles', component: ArticleListComponent },
   { path: 'create-article', component: ArticleFormComponent },
   { path: 'nutritionniste/:id/articles', component: ArticleListComponent },
-  { path: 'client-profile', component: ClientProfileComponent },
   { path: 'client/:id/profile', component: ClientProfileComponent }
 ];
 

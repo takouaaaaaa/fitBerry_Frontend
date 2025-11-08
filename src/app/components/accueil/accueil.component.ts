@@ -7,7 +7,6 @@ import { HeroSectionComponent } from './sections/hero-section/hero-section.compo
 import { BenefitsSectionComponent } from './sections/benefits-section/benefits-section.component';
 import { FeaturesGridSectionComponent } from './sections/features-grid-section/features-grid-section.component';
 import { WhatIsSectionComponent } from './sections/what-is-section/what-is-section.component';
-import { PlansSectionComponent } from './sections/plans-section/plans-section.component';
 import { CostBannerSectionComponent } from './sections/cost-banner-section/cost-banner-section.component';
 import { NutritionistSectionComponent } from './sections/nutritionist-section/nutritionist-section.component';
 import { StoriesSectionComponent } from './sections/stories-section/stories-section.component';
@@ -28,7 +27,6 @@ import { FooterComponent } from '../../layout/footer/footer.component';
  BenefitsSectionComponent,
  FeaturesGridSectionComponent,
  WhatIsSectionComponent,
- PlansSectionComponent,
  CostBannerSectionComponent,
  NutritionistSectionComponent,
  StoriesSectionComponent,
