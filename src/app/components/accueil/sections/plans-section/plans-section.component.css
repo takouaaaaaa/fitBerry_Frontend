@@ -1,0 +1,39 @@
+/* --- 5. Plans Section --- */
+.plans-section {
+     background-color: #fff;
+}
+.plans-container {
+ background-color: var(--color-bg-light-green);
+ border-radius: 30px;
+ padding: 50px;
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+}
+.plans-container p {
+ margin-top: 10px;
+ margin-bottom: 40px;
+}
+.plan-options {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-wrap: wrap; 
+ gap: 20px;
+}
+.plan-card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 20px;
+}
+.plan-card img {
+ width: 80px;
+ height: 80px;
+ margin-bottom: 15px;
+}
+plan-card h3 {
+ font-size: 1.3rem;
+ font-weight: 600;
+}
