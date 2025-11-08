@@ -8,24 +8,27 @@ import { AppComponent } from './app.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
 import { ArticleFormComponent } from './components/article-form/article-form.component';
 import { ClientProfileComponent } from './components/client-profile/client-profile.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
- declarations: [
- AppComponent,
- ArticleListComponent,
- ArticleFormComponent,
- ClientProfileComponent
-
- ],
- imports: [
- BrowserModule,
- FormsModule,
- ReactiveFormsModule,
- HttpClientModule,
- AppRoutingModule
- ],
- providers: [],
- bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    ArticleListComponent,
+    ArticleFormComponent,
+    ClientProfileComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    LoginComponent,      
+    RegisterComponent
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
